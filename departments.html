@@ -59,8 +59,8 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="doctor.html" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link" href="doctor.html" data-target="#collapseTwo" aria-expanded="true"
+                    aria-controls="collapseTwo">
                     <i class="fa-solid fa-user-doctor"></i>
                     <span>Doctors</span>
                 </a>
@@ -68,22 +68,21 @@
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="nurse.html" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link" href="nurse.html" data-target="#collapseUtilities" aria-expanded="true"
+                    aria-controls="collapseUtilities">
                     <i class="fa-solid fa-user-nurse"></i>
                     <span>Nurse</span>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="patient.html" data-target="#collapseUtilities3"
-                    aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link" href="patient.html" data-target="#collapseUtilities3" aria-expanded="true"
+                    aria-controls="collapseUtilities">
                     <i class="fa-solid fa-bed-pulse"></i>
                     <span>Patient</span>
                 </a>
             </li>
 
-            
             <li class="nav-item">
                 <a class="nav-link" href="financicus.html" data-target="#collapseUtilities3" aria-expanded="true"
                     aria-controls="collapseUtilities">
@@ -126,7 +125,7 @@
                     <span>Reports</span>
                 </a>
             </li>
-          </ul>
+        </ul>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -172,13 +171,12 @@
                     </ul>
                 </nav>
 
-                <!-- Begin Page Content -->
                 <div class="container-fluid">
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Nurses</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Departments</h1>
                         <a href="#" class="d-none add-doctor d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Add Nurse</a>
+                                class="fas fa-download fa-sm text-white-50"></i> Add Department</a>
                     </div>
                 </div>
             </div>
@@ -187,27 +185,8 @@
                 <i class="fa-solid fa-circle-xmark"></i>
                 <div class="form">
                     <form class="login-form" style="text-align: start !important;">
-                        <input type="text" placeholder="Full Name" />
-                        <input type="email" placeholder="Email" />
-                        <input type="text" placeholder="Phone Number" />
-                        <input type="date" placeholder="Age" />
-                        <input type="text" placeholder="Address" />
-                        <select class="form-control bg-light my-2">
-                            <option value="All" selected>Select Your Department</option>
-                            <option value="">Department 1</option>
-                            <option value="">Department 2</option>
-                            <option value="">Department 3</option>
-                        </select>
-                        <div style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
-                            <input type="radio" id="male" class="mx-2" name="gender" value="Male">
-                            <p for="male">Male</p>
-                        </div>
-                        <div style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
-                            <input type="radio" id="female" class="mx-2" name="gender" value="Female">
-                            <p for="female">Female</p>
-                        </div>
-                        <input type="password" placeholder="Password" />
-                        <input type="password" placeholder="Confirm Password" />
+                        <input type="text" placeholder="Department Name" />
+                        <textarea class="form-control mb-2" id="" cols="30" rows="10" placeholder="Description"></textarea>
                         <button>Create</button>
                     </form>
                 </div>
@@ -217,7 +196,7 @@
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Nurses List</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">Departments List</h6>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -226,33 +205,19 @@
                                     <tr>
                                         <th>ID</th>
                                         <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Password</th>
-                                        <th>Phone Number</th>
-                                        <th>Department</th>
-                                        <th>Address</th>
-                                        <th>Age</th>
-                                        <th>Gender</th>
-                                        <th>Action</th>
+                                        <th>Description</th>
+                                        <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Ahmed Hassan</td>
-                                        <td>ahmed900@gmail.com</td>
-                                        <td>12345678</td>
-                                        <td>0123 456 7890</td>
-                                        <td>Legs</td>
-                                        <td>Egypt, Giza</td>
-                                        <td>35</td>
-                                        <td>Male</td>
-                                        <td>
-                                            <i class="fa-solid fa-pen" style="color: rgb(93, 206, 27);"></i>
-                                            <i class="fa-solid fa-eye mx-3" style="color: rgb(219, 223, 19);"></i>
-                                            <i class="fa-solid fa-trash" style="color: rgb(255, 81, 0);"></i>
-                                        </td>
-                                    </tr>
+                                    <td>1</td>
+                                    <td>Ahmed</td>
+                                    <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, nisi!</td>
+                                    <td>
+                                        <i class="fa-solid fa-pen" style="color: rgb(93, 206, 27);"></i>
+                                        <i class="fa-solid fa-eye mx-3" style="color: rgb(219, 223, 19);"></i>
+                                        <i class="fa-solid fa-trash" style="color: rgb(255, 81, 0);"></i>
+                                    </td>
                                 </tbody>
                             </table>
                         </div>

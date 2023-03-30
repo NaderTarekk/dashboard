@@ -59,55 +59,74 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link" href="doctor.html" data-target="#collapseTwo" aria-expanded="true"
+                    aria-controls="collapseTwo">
                     <i class="fa-solid fa-user-doctor"></i>
                     <span>Doctors</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Functions:</h6>
-                        <a class="collapse-item" href="index.html">Dashboard</a>
-                        <a class="collapse-item" href="cards.html">Function 2</a>
-                    </div>
-                </div>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link" href="nurse.html" data-target="#collapseUtilities" aria-expanded="true"
+                    aria-controls="collapseUtilities">
                     <i class="fa-solid fa-user-nurse"></i>
                     <span>Nurse</span>
                 </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Functions:</h6>
-                        <a class="collapse-item" href="nurse.html">Dashboard</a>
-                        <a class="collapse-item" href="utilities-border.html">Function 3</a>
-                    </div>
-                </div>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities3"
-                    aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link" href="patient.html" data-target="#collapseUtilities3" aria-expanded="true"
+                    aria-controls="collapseUtilities">
                     <i class="fa-solid fa-bed-pulse"></i>
                     <span>Patient</span>
                 </a>
-                <div id="collapseUtilities3" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Functions:</h6>
-                        <a class="collapse-item" href="patient.html">Dashboard</a>
-                        <a class="collapse-item" href="utilities-border.html">Function 2</a>
-                    </div>
-                </div>
+            </li>
+
+
+            <li class="nav-item">
+                <a class="nav-link" href="financicus.html" data-target="#collapseUtilities3" aria-expanded="true"
+                    aria-controls="collapseUtilities">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>Financials</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="receptionists.html" data-target="#collapseUtilities3" aria-expanded="true"
+                    aria-controls="collapseUtilities">
+                    <i class="fa-solid fa-people-arrows"></i>
+                    <span>Receptionists</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="pharmacies.html" data-target="#collapseUtilities3" aria-expanded="true"
+                    aria-controls="collapseUtilities">
+                    <i class="fa-solid fa-house-chimney-medical"></i>
+                    <span>Pharmacies</span>
+                </a>
+            </li>
+
+            <hr class="sidebar-divider">
+            <li class="nav-item">
+                <a class="nav-link" href="departments.html" data-target="#collapseUtilities3" aria-expanded="true"
+                    aria-controls="collapseUtilities">
+                    <i class="fa-solid fa-clipboard"></i>
+                    <span>Departments</span>
+                </a>
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
+            <li class="nav-item">
+                <a class="nav-link" href="reports.html" data-target="#collapseUtilities3" aria-expanded="true"
+                    aria-controls="collapseUtilities">
+                    <i class="fa-solid fa-flag"></i>
+                    <span>Reports</span>
+                </a>
+            </li>
+
         </ul>
         <!-- End of Sidebar -->
 
@@ -130,7 +149,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Patient</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
                                 <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
@@ -168,12 +187,24 @@
             <div class="login-page">
                 <i class="fa-solid fa-circle-xmark"></i>
                 <div class="form">
-                    <form class="login-form">
-                        <input type="FName" placeholder="First Name" />
-                        <input type="LName" placeholder="Last Name" />
-                        <input type="Email" placeholder="Email" />
-                        <input type="Position" placeholder="Position" />
-                        <input type="Age" placeholder="Age" />
+                    <form class="login-form" style="text-align: start !important;">
+                        <input type="text" placeholder="Full Name" />
+                        <input type="email" placeholder="Email" />
+                        <input type="text" placeholder="Phone Number" />
+                        <input type="date" placeholder="Age" />
+                        <input type="text" placeholder="Address" />
+                        <div
+                            style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                            <input type="radio" id="male" class="mx-2" name="gender" value="Male">
+                            <p for="male">Male</p>
+                        </div>
+                        <div
+                            style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                            <input type="radio" id="female" class="mx-2" name="gender" value="Female">
+                            <p for="female">Female</p>
+                        </div>
+                        <input type="password" placeholder="Password" />
+                        <input type="password" placeholder="Confirm Password" />
                         <button>Create</button>
                     </form>
                 </div>
@@ -190,22 +221,32 @@
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
+                                        <th>ID</th>
                                         <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
+                                        <th>Email</th>
+                                        <th>Password</th>
+                                        <th>Phone Number</th>
+                                        <th>Address</th>
                                         <th>Age</th>
-                                        <th>Start date</th>
-                                        <th>Salary</th>
+                                        <th>Gender</th>
+                                        <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>1</td>
                                         <td>Ahmed Hassan</td>
-                                        <td>Patient</td>
-                                        <td>Egypt</td>
-                                        <td>27</td>
-                                        <td>2023/03/27</td>
-                                        <td>100000 EGP</td>
+                                        <td>ahmed900@gmail.com</td>
+                                        <td>12345678</td>
+                                        <td>0123 456 7890</td>
+                                        <td>Egypt, Giza</td>
+                                        <td>35</td>
+                                        <td>Male</td>
+                                        <td>
+                                            <i class="fa-solid fa-pen" style="color: rgb(93, 206, 27);"></i>
+                                            <i class="fa-solid fa-eye mx-3" style="color: rgb(219, 223, 19);"></i>
+                                            <i class="fa-solid fa-trash" style="color: rgb(255, 81, 0);"></i>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
