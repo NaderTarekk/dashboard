@@ -2077,7 +2077,7 @@ pre code {
         border: 0
     }
 
-    .edit1 .form{
+    .edit1 .form {
         top: 50px !important;
     }
 }
@@ -12537,7 +12537,8 @@ body.sidebar-toggled footer.sticky-footer {
 .container .info span .fa {
     color: #EF3B3A;
 }
-.login-page .fa-circle-xmark{
+
+.login-page .fa-circle-xmark {
     position: relative;
     top: -90px;
 }
@@ -12563,20 +12564,40 @@ body.sidebar-toggled footer.sticky-footer {
     display: block !important;
 }
 
+.show-card {
+    display: block !important;
+}
+
+.removecardP {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, .2);
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.removecard {
+    position: relative;
+    top: 30%;
+    width: max-content;
+    margin: 0 auto;
+}
+
 @media (max-width: 1400px) {
     input {
         margin: 5px !important;
         padding: 10px !important;
     }
 
-    .edit1 .form{
+    .edit1 .form {
         position: relative;
         top: 30px;
     }
 }
 
 @media (min-width: 1400px) {
-    .edit1 .form{
+    .edit1 .form {
         position: relative;
         top: 50px;
     }
