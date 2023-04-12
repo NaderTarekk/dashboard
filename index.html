@@ -30,7 +30,7 @@
 
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 </head>
 
 <body id="page-top">
@@ -58,49 +58,48 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link" href="doctor.html" data-target="#collapseTwo" aria-expanded="true"
-                    aria-controls="collapseTwo">
+            <li class="nav-item DoctorNavItem">
+                <a class="nav-link" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fa-solid fa-user-doctor"></i>
                     <span>Doctors</span>
                 </a>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link" href="nurse.html" data-target="#collapseUtilities" aria-expanded="true"
+            <li class="nav-item NurseNavItem">
+                <a class="nav-link" data-target="#collapseUtilities" aria-expanded="true"
                     aria-controls="collapseUtilities">
                     <i class="fa-solid fa-user-nurse"></i>
                     <span>Nurse</span>
                 </a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="patient.html" data-target="#collapseUtilities3" aria-expanded="true"
+            <li class="nav-item PatientNavItem">
+                <a class="nav-link" data-target="#collapseUtilities3" aria-expanded="true"
                     aria-controls="collapseUtilities">
                     <i class="fa-solid fa-bed-pulse"></i>
                     <span>Patient</span>
                 </a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="financicus.html" data-target="#collapseUtilities3" aria-expanded="true"
+            <li class="nav-item FinanceNavItem">
+                <a class="nav-link" data-target="#collapseUtilities3" aria-expanded="true"
                     aria-controls="collapseUtilities">
                     <i class="fa-solid fa-chart-simple"></i>
                     <span>Financials</span>
                 </a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="receptionists.html" data-target="#collapseUtilities3" aria-expanded="true"
+            <li class="nav-item ReceptionistNavItem">
+                <a class="nav-link" data-target="#collapseUtilities3" aria-expanded="true"
                     aria-controls="collapseUtilities">
                     <i class="fa-solid fa-people-arrows"></i>
                     <span>Receptionists</span>
                 </a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="pharmacies.html" data-target="#collapseUtilities3" aria-expanded="true"
+            <li class="nav-item PharmaciesNavItem">
+                <a class="nav-link" data-target="#collapseUtilities3" aria-expanded="true"
                     aria-controls="collapseUtilities">
                     <i class="fa-solid fa-house-chimney-medical"></i>
                     <span>Pharmacies</span>
@@ -108,8 +107,8 @@
             </li>
 
             <hr class="sidebar-divider">
-            <li class="nav-item">
-                <a class="nav-link" href="departments.html" data-target="#collapseUtilities3" aria-expanded="true"
+            <li class="nav-item DepartmentNavItem">
+                <a class="nav-link" data-target="#collapseUtilities3" aria-expanded="true"
                     aria-controls="collapseUtilities">
                     <i class="fa-solid fa-clipboard"></i>
                     <span>Departments</span>
@@ -125,6 +124,7 @@
                     <span>Reports</span>
                 </a>
             </li>
+
         </ul>
         <!-- End of Sidebar -->
 
@@ -145,7 +145,7 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
                                 <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
@@ -153,16 +153,16 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item">
                                     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Settings
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
@@ -170,8 +170,887 @@
                         </li>
                     </ul>
                 </nav>
+
+            </div>
+
+            <!-- Doctor Section -->
+            <div class="Doctor-Section Sections">
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Doctor</h1>
+                        <a class="d-none add-doctor d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Add Doctor</a>
+                    </div>
+                </div>
+
+                <div class="login-page doctor-login-page">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <div class="form">
+                        <form class="login-form" style="text-align: start !important;">
+                            <input type="text" placeholder="Full Name" />
+                            <input type="email" placeholder="Email" />
+                            <input type="text" placeholder="Phone Number" />
+                            <input type="date" placeholder="Age" />
+                            <input type="text" placeholder="Address" />
+                            <select class="form-control bg-light my-2">
+                                <option value="All" selected>Select Your Department</option>
+                                <option value="">Department 1</option>
+                                <option value="">Department 2</option>
+                                <option value="">Department 3</option>
+                            </select>
+                            <div
+                                style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                <input type="radio" id="male" class="mx-2" name="gender" value="Male">
+                                <p for="male">Male</p>
+                            </div>
+                            <div
+                                style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                <input type="radio" id="female" class="mx-2" name="gender" value="Female">
+                                <p for="female">Female</p>
+                            </div>
+                            <input type="password" placeholder="Password" />
+                            <input type="password" placeholder="Confirm Password" />
+                            <button>Create</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Doctors List</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone Number</th>
+                                            <th>Department</th>
+                                            <th>Address</th>
+                                            <th>Age</th>
+                                            <th>Gender</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Ahmed Hassan</td>
+                                            <td>ahmed900@gmail.com</td>
+                                            <td>0123 456 7890</td>
+                                            <td>Legs</td>
+                                            <td>Egypt, Giza</td>
+                                            <td>35</td>
+                                            <td>Male</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen mr-3"
+                                                    style="color: rgb(93, 206, 27); cursor: pointer;"></i>
+                                                <i class="fa-solid fa-trash"
+                                                    style="color: rgb(255, 81, 0); cursor: pointer;"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edit1 edit-page">
+                    <div class="edit">
+                        <i class="fa-solid fa-circle-xmark xmark2" style="color: rgb(67, 67, 212);"></i>
+                        <div class="form">
+                            <form class="login-form" style="text-align: start !important;">
+                                <input type="text" placeholder="Full Name" />
+                                <input type="email" placeholder="Email" />
+                                <input type="text" placeholder="Phone Number" />
+                                <input type="date" placeholder="Age" />
+                                <input type="text" placeholder="Address" />
+                                <select class="form-control bg-light my-2">
+                                    <option value="All" selected>Select Your Department</option>
+                                    <option value="">Department 1</option>
+                                    <option value="">Department 2</option>
+                                    <option value="">Department 3</option>
+                                </select>
+                                <div
+                                    style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                    <input type="radio" id="male" class="mx-2" name="gender" value="Male">
+                                    <p for="male">Male</p>
+                                </div>
+                                <div
+                                    style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                    <input type="radio" id="female" class="mx-2" name="gender" value="Female">
+                                    <p for="female">Female</p>
+                                </div>
+                                <input type="password" placeholder="Password" />
+                                <input type="password" placeholder="Confirm Password" />
+                                <button>Create</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- remove user  -->
+                <div class="removecardP">
+                    <div class="card text-center removecard">
+                        <div class="card-header">
+                            <i style="cursor: pointer;" class="fa-solid fa-xmark DontDeleteUser"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Delete User</h5>
+                            <p class="card-text">Are you sure that you want to delete ?</p>
+                            <a class="btn btn-danger DeleteUser" style="cursor: pointer;">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--=====================================================================================-->
+            <!--=====================================================================================-->
+            <!-- Nurse Section -->
+            <!-- Begin Page Content -->
+            <div class="Nurse-Section Sections">
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Nurses</h1>
+                        <a class="d-none add-Nurse d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Add Nurse</a>
+                    </div>
+                </div>
+
+                <div class="login-page nurse-login-page">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <div class="form">
+                        <form class="login-form" style="text-align: start !important;">
+                            <input type="text" placeholder="Full Name" />
+                            <input type="email" placeholder="Email" />
+                            <input type="text" placeholder="Phone Number" />
+                            <input type="date" placeholder="Age" />
+                            <input type="text" placeholder="Address" />
+                            <select class="form-control bg-light my-2">
+                                <option value="All" selected>Select Your Department</option>
+                                <option value="">Department 1</option>
+                                <option value="">Department 2</option>
+                                <option value="">Department 3</option>
+                            </select>
+                            <div
+                                style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                <input type="radio" id="male" class="mx-2" name="gender" value="Male">
+                                <p for="male">Male</p>
+                            </div>
+                            <div
+                                style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                <input type="radio" id="female" class="mx-2" name="gender" value="Female">
+                                <p for="female">Female</p>
+                            </div>
+                            <input type="password" placeholder="Password" />
+                            <input type="password" placeholder="Confirm Password" />
+                            <button>Create</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Nurses List</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone Number</th>
+                                            <th>Department</th>
+                                            <th>Address</th>
+                                            <th>Age</th>
+                                            <th>Gender</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Ahmed Hassan</td>
+                                            <td>ahmed900@gmail.com</td>
+                                            <td>0123 456 7890</td>
+                                            <td>Legs</td>
+                                            <td>Egypt, Giza</td>
+                                            <td>35</td>
+                                            <td>Male</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen mr-3"
+                                                    style="color: rgb(93, 206, 27); cursor: pointer;"></i>
+                                                <i class="fa-solid fa-trash"
+                                                    style="color: rgb(255, 81, 0); cursor: pointer;"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="edit1 edit-page">
+                    <div class="edit">
+                        <i class="fa-solid fa-circle-xmark xmark2" style="color: rgb(67, 67, 212);"></i>
+                        <div class="form">
+                            <form class="login-form" style="text-align: start !important;">
+                                <input type="text" placeholder="Full Name" />
+                                <input type="email" placeholder="Email" />
+                                <input type="text" placeholder="Phone Number" />
+                                <input type="date" placeholder="Age" />
+                                <input type="text" placeholder="Address" />
+                                <div
+                                    style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                    <input type="radio" id="male" class="mx-2" name="gender" value="Male">
+                                    <p for="male">Male</p>
+                                </div>
+                                <div
+                                    style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                    <input type="radio" id="female" class="mx-2" name="gender" value="Female">
+                                    <p for="female">Female</p>
+                                </div>
+                                <input type="password" placeholder="Password" />
+                                <input type="password" placeholder="Confirm Password" />
+                                <button>Create</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="removecardP">
+                    <div class="card text-center removecard">
+                        <div class="card-header">
+                            <i style="cursor: pointer;" class="fa-solid fa-xmark DontDeleteUser"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Delete User</h5>
+                            <p class="card-text">Are you sure that you want to delete ?</p>
+                            <a class="btn btn-danger DeleteUser" style="cursor: pointer;">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=====================================================================================-->
+            <!--=====================================================================================-->
+            <!-- Patient Section -->
+            <!-- Begin Page Content -->
+            <div class="Patient-Section Sections">
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Patients</h1>
+                        <a class="d-none add-Patient d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Add Patient</a>
+                    </div>
+                </div>
+
+                <div class="login-page patient-login-page">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <div class="form">
+                        <form class="login-form" style="text-align: start !important;">
+                            <input type="text" placeholder="Full Name" />
+                            <input type="email" placeholder="Email" />
+                            <input type="text" placeholder="Phone Number" />
+                            <input type="date" placeholder="Age" />
+                            <input type="text" placeholder="Address" />
+                            <div
+                                style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                <input type="radio" id="male" class="mx-2" name="gender" value="Male">
+                                <p for="male">Male</p>
+                            </div>
+                            <div
+                                style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                <input type="radio" id="female" class="mx-2" name="gender" value="Female">
+                                <p for="female">Female</p>
+                            </div>
+                            <input type="password" placeholder="Password" />
+                            <input type="password" placeholder="Confirm Password" />
+                            <button>Create</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Patients List</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone Number</th>
+                                            <th>Address</th>
+                                            <th>Age</th>
+                                            <th>Gender</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Ahmed Hassan</td>
+                                            <td>ahmed900@gmail.com</td>
+                                            <td>0123 456 7890</td>
+                                            <td>Egypt, Giza</td>
+                                            <td>35</td>
+                                            <td>Male</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen mr-3"
+                                                    style="color: rgb(93, 206, 27); cursor: pointer;"></i>
+                                                <i class="fa-solid fa-trash"
+                                                    style="color: rgb(255, 81, 0); cursor: pointer;"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="edit1 edit-page">
+                    <div class="edit">
+                        <i class="fa-solid fa-circle-xmark xmark2" style="color: rgb(67, 67, 212);"></i>
+                        <div class="form">
+                            <form class="login-form" style="text-align: start !important;">
+                                <input type="text" placeholder="Full Name" />
+                                <input type="email" placeholder="Email" />
+                                <input type="text" placeholder="Phone Number" />
+                                <input type="date" placeholder="Age" />
+                                <input type="text" placeholder="Address" />
+                                <div
+                                    style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                    <input type="radio" id="male" class="mx-2" name="gender" value="Male">
+                                    <p for="male">Male</p>
+                                </div>
+                                <div
+                                    style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                    <input type="radio" id="female" class="mx-2" name="gender" value="Female">
+                                    <p for="female">Female</p>
+                                </div>
+                                <input type="password" placeholder="Password" />
+                                <input type="password" placeholder="Confirm Password" />
+                                <button>Create</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="removecardP">
+                        <div class="card text-center removecard">
+                            <div class="card-header">
+                                <i style="cursor: pointer;" class="fa-solid fa-xmark DontDeleteUser"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Delete User</h5>
+                                <p class="card-text">Are you sure that you want to delete ?</p>
+                                <a class="btn btn-danger DeleteUser" style="cursor: pointer;">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--=====================================================================================-->
+            <!--=====================================================================================-->
+            <!-- Financials Section -->
+            <!-- Begin Page Content -->
+            <div class="Finance-Section Sections">
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Financial</h1>
+                        <a class="d-none add-Finance d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Add Financial</a>
+                    </div>
+                </div>
+
+                <div class="login-page Finance-login-page">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <div class="form">
+                        <form class="login-form" style="text-align: start !important;">
+                            <input type="text" placeholder="Full Name" />
+                            <input type="email" placeholder="Email" />
+                            <input type="text" placeholder="Phone Number" />
+                            <input type="date" placeholder="Age" />
+                            <input type="text" placeholder="Address" />
+                            <div
+                                style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                <input type="radio" id="male" class="mx-2" name="gender" value="Male">
+                                <p for="male">Male</p>
+                            </div>
+                            <div
+                                style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                <input type="radio" id="female" class="mx-2" name="gender" value="Female">
+                                <p for="female">Female</p>
+                            </div>
+                            <input type="password" placeholder="Password" />
+                            <input type="password" placeholder="Confirm Password" />
+                            <button>Create</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Financial List</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone Number</th>
+                                            <th>Address</th>
+                                            <th>Age</th>
+                                            <th>Gender</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Ahmed Hassan</td>
+                                            <td>ahmed900@gmail.com</td>
+                                            <td>0123 456 7890</td>
+                                            <td>Egypt, Giza</td>
+                                            <td>35</td>
+                                            <td>Male</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen mr-3"
+                                                    style="color: rgb(93, 206, 27); cursor: pointer;"></i>
+                                                <i class="fa-solid fa-trash"
+                                                    style="color: rgb(255, 81, 0); cursor: pointer;"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="edit1 edit-page">
+                    <div class="edit">
+                        <i class="fa-solid fa-circle-xmark xmark2" style="color: rgb(67, 67, 212);"></i>
+                        <div class="form">
+                            <form class="login-form" style="text-align: start !important;">
+                                <input type="text" placeholder="Full Name" />
+                                <input type="email" placeholder="Email" />
+                                <input type="text" placeholder="Phone Number" />
+                                <input type="date" placeholder="Age" />
+                                <input type="text" placeholder="Address" />
+                                <div
+                                    style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                    <input type="radio" id="male" class="mx-2" name="gender" value="Male">
+                                    <p for="male">Male</p>
+                                </div>
+                                <div
+                                    style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                    <input type="radio" id="female" class="mx-2" name="gender" value="Female">
+                                    <p for="female">Female</p>
+                                </div>
+                                <input type="password" placeholder="Password" />
+                                <input type="password" placeholder="Confirm Password" />
+                                <button>Create</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="removecardP">
+                        <div class="card text-center removecard">
+                            <div class="card-header">
+                                <i style="cursor: pointer;" class="fa-solid fa-xmark DontDeleteUser"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Delete User</h5>
+                                <p class="card-text">Are you sure that you want to delete ?</p>
+                                <a class="btn btn-danger DeleteUser" style="cursor: pointer;">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--=====================================================================================-->
+            <!--=====================================================================================-->
+            <!-- Receptionist Section -->
+            <!-- Begin Page Content -->
+            <div class="Receptionist-Section Sections">
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Receptionists</h1>
+                        <a class="d-none add-Receptionist d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Add Receptionist</a>
+                    </div>
+                </div>
+
+                <div class="login-page Receptionist-login-page">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <div class="form">
+                        <form class="login-form" style="text-align: start !important;">
+                            <input type="text" placeholder="Full Name" />
+                            <input type="email" placeholder="Email" />
+                            <input type="text" placeholder="Phone Number" />
+                            <input type="date" placeholder="Age" />
+                            <input type="text" placeholder="Address" />
+                            <div
+                                style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                <input type="radio" id="male" class="mx-2" name="gender" value="Male">
+                                <p for="male">Male</p>
+                            </div>
+                            <div
+                                style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                <input type="radio" id="female" class="mx-2" name="gender" value="Female">
+                                <p for="female">Female</p>
+                            </div>
+                            <input type="password" placeholder="Password" />
+                            <input type="password" placeholder="Confirm Password" />
+                            <button>Create</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Receptionists List</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone Number</th>
+                                            <th>Address</th>
+                                            <th>Age</th>
+                                            <th>Gender</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Ahmed Hassan</td>
+                                            <td>ahmed900@gmail.com</td>
+                                            <td>0123 456 7890</td>
+                                            <td>Egypt, Giza</td>
+                                            <td>35</td>
+                                            <td>Male</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen mr-3"
+                                                    style="color: rgb(93, 206, 27); cursor: pointer;"></i>
+                                                <i class="fa-solid fa-trash"
+                                                    style="color: rgb(255, 81, 0); cursor: pointer;"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="edit1 edit-page">
+                    <div class="edit">
+                        <i class="fa-solid fa-circle-xmark xmark2" style="color: rgb(67, 67, 212);"></i>
+                        <div class="form">
+                            <form class="login-form" style="text-align: start !important;">
+                                <input type="text" placeholder="Full Name" />
+                                <input type="email" placeholder="Email" />
+                                <input type="text" placeholder="Phone Number" />
+                                <input type="date" placeholder="Age" />
+                                <input type="text" placeholder="Address" />
+                                <div
+                                    style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                    <input type="radio" id="male" class="mx-2" name="gender" value="Male">
+                                    <p for="male">Male</p>
+                                </div>
+                                <div
+                                    style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                    <input type="radio" id="female" class="mx-2" name="gender" value="Female">
+                                    <p for="female">Female</p>
+                                </div>
+                                <input type="password" placeholder="Password" />
+                                <input type="password" placeholder="Confirm Password" />
+                                <button>Create</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="removecardP">
+                        <div class="card text-center removecard">
+                            <div class="card-header">
+                                <i style="cursor: pointer;" class="fa-solid fa-xmark DontDeleteUser"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Delete User</h5>
+                                <p class="card-text">Are you sure that you want to delete ?</p>
+                                <a class="btn btn-danger DeleteUser" style="cursor: pointer;">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--=====================================================================================-->
+            <!--=====================================================================================-->
+            <!-- Pharmacies Section -->
+            <!-- Begin Page Content -->
+            <div class="Pharmacies-Section Sections">
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Pharmacies</h1>
+                        <a class="d-none add-Pharmacies d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Add Pharmacies</a>
+                    </div>
+                </div>
+
+                <div class="login-page Pharmacies-login-page">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <div class="form">
+                        <form class="login-form" style="text-align: start !important;">
+                            <input type="text" placeholder="Full Name" />
+                            <input type="email" placeholder="Email" />
+                            <input type="text" placeholder="Phone Number" />
+                            <input type="date" placeholder="Age" />
+                            <input type="text" placeholder="Address" />
+                            <div
+                                style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                <input type="radio" id="male" class="mx-2" name="gender" value="Male">
+                                <p for="male">Male</p>
+                            </div>
+                            <div
+                                style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                <input type="radio" id="female" class="mx-2" name="gender" value="Female">
+                                <p for="female">Female</p>
+                            </div>
+                            <input type="password" placeholder="Password" />
+                            <input type="password" placeholder="Confirm Password" />
+                            <button>Create</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Pharmacies List</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone Number</th>
+                                            <th>Address</th>
+                                            <th>Age</th>
+                                            <th>Gender</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Ahmed Hassan</td>
+                                            <td>ahmed900@gmail.com</td>
+                                            <td>0123 456 7890</td>
+                                            <td>Egypt, Giza</td>
+                                            <td>35</td>
+                                            <td>Male</td>
+                                            <td>
+                                                <i class="fa-solid fa-pen mr-3"
+                                                    style="color: rgb(93, 206, 27); cursor: pointer;"></i>
+                                                <i class="fa-solid fa-trash"
+                                                    style="color: rgb(255, 81, 0); cursor: pointer;"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="edit1 edit-page">
+                    <div class="edit">
+                        <i class="fa-solid fa-circle-xmark xmark2" style="color: rgb(67, 67, 212);"></i>
+                        <div class="form">
+                            <form class="login-form" style="text-align: start !important;">
+                                <input type="text" placeholder="Full Name" />
+                                <input type="email" placeholder="Email" />
+                                <input type="text" placeholder="Phone Number" />
+                                <input type="date" placeholder="Age" />
+                                <input type="text" placeholder="Address" />
+                                <div
+                                    style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                    <input type="radio" id="male" class="mx-2" name="gender" value="Male">
+                                    <p for="male">Male</p>
+                                </div>
+                                <div
+                                    style="width: max-content; display: flex; align-items: center ; justify-content: space-between;">
+                                    <input type="radio" id="female" class="mx-2" name="gender" value="Female">
+                                    <p for="female">Female</p>
+                                </div>
+                                <input type="password" placeholder="Password" />
+                                <input type="password" placeholder="Confirm Password" />
+                                <button>Create</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="removecardP">
+                        <div class="card text-center removecard">
+                            <div class="card-header">
+                                <i style="cursor: pointer;" class="fa-solid fa-xmark DontDeleteUser"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Delete User</h5>
+                                <p class="card-text">Are you sure that you want to delete ?</p>
+                                <a class="btn btn-danger DeleteUser" style="cursor: pointer;">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--=====================================================================================-->
+            <!--=====================================================================================-->
+            <!-- Departments Section -->
+            <!-- Begin Page Content -->
+            <div class="Department-Section Sections">
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Departments</h1>
+                        <a class="d-none add-Department d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Add Department</a>
+                    </div>
+                </div>
+
+                <div class="login-page Department-login-page">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <div class="form">
+                        <form class="login-form" style="text-align: start !important;">
+                            <input type="text" placeholder="Department Name" />
+                            <textarea class="form-control mb-2" id="" cols="30" rows="10"
+                                placeholder="Description"></textarea>
+                            <button>Create</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Departments List</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Description</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <td>1</td>
+                                        <td>Ahmed</td>
+                                        <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, nisi!</td>
+                                        <td>
+                                            <i class="fa-solid fa-pen mr-3"
+                                                style="color: rgb(93, 206, 27); cursor: pointer;"></i>
+                                            <i class="fa-solid fa-trash"
+                                                style="color: rgb(255, 81, 0); cursor: pointer;"></i>
+                                        </td>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit1 edit-page">
+                        <div class="edit">
+                            <i class="fa-solid fa-circle-xmark xmark2" style="color: rgb(67, 67, 212);"></i>
+                            <div class="form">
+                                <form class="login-form" style="text-align: start !important;">
+                                    <input type="text" placeholder="Full Name" />
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="Description"
+                                        class="form-control mb-2"></textarea>
+                                    <button>Create</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
     </div>
 
     <!-- Bootstrap core JavaScript-->

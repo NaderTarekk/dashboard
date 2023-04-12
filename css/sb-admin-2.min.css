@@ -12431,10 +12431,11 @@ body.sidebar-toggled footer.sticky-footer {
     width: 100%;
     height: 100vh;
     position: fixed;
+    top: 0;
     z-index: 99999999;
     background-color: rgba(0, 0, 0, .5);
     display: none;
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 .login-page i {
@@ -12601,4 +12602,20 @@ body.sidebar-toggled footer.sticky-footer {
         position: relative;
         top: 50px;
     }
+}
+
+.Sections {
+    display: none;
+}
+
+.Show-Section {
+    display: block !important;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.login-pages {
+    display: block !important;
 }
