@@ -145,8 +145,8 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
                                 <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                             </a>
@@ -250,21 +250,20 @@
                                             <td>35</td>
                                             <td>Male</td>
                                             <td>
-                                                <i class="fa-solid fa-pen mr-3"
+                                                <i class="fa-solid fa-pen mr-3 edit-doctor-button"
                                                     style="color: rgb(93, 206, 27); cursor: pointer;"></i>
-                                                <i class="fa-solid fa-trash"
+                                                <i class="fa-solid fa-trash remove-doctor-button"
                                                     style="color: rgb(255, 81, 0); cursor: pointer;"></i>
                                             </td>
                                         </tr>
                                     </tbody>
                                 </table>
-
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="edit1 edit-page">
+                <div class="edit1 edit-page edit-doctor">
                     <div class="edit">
                         <i class="fa-solid fa-circle-xmark xmark2" style="color: rgb(67, 67, 212);"></i>
                         <div class="form">
@@ -299,15 +298,15 @@
                 </div>
 
                 <!-- remove user  -->
-                <div class="removecardP">
-                    <div class="card text-center removecard">
+                <div class="removecardP RMDoctor">
+                    <div class="card text-center ">
                         <div class="card-header">
                             <i style="cursor: pointer;" class="fa-solid fa-xmark DontDeleteUser"></i>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title text-danger">Delete User</h5>
                             <p class="card-text">Are you sure that you want to delete ?</p>
-                            <a class="btn btn-danger DeleteUser" style="cursor: pointer;">Delete</a>
+                            <a class="btn btn-danger DeleteUser del1" style="cursor: pointer;">Delete</a>
                         </div>
                     </div>
                 </div>
@@ -392,9 +391,9 @@
                                             <td>35</td>
                                             <td>Male</td>
                                             <td>
-                                                <i class="fa-solid fa-pen mr-3"
+                                                <i class="fa-solid fa-pen mr-3 edit-nurse-button"
                                                     style="color: rgb(93, 206, 27); cursor: pointer;"></i>
-                                                <i class="fa-solid fa-trash"
+                                                <i class="fa-solid fa-trash remove-nurse-button"
                                                     style="color: rgb(255, 81, 0); cursor: pointer;"></i>
                                             </td>
                                         </tr>
@@ -406,7 +405,7 @@
 
                 </div>
 
-                <div class="edit1 edit-page">
+                <div class="edit1 edit-page edit-nurse">
                     <div class="edit">
                         <i class="fa-solid fa-circle-xmark xmark2" style="color: rgb(67, 67, 212);"></i>
                         <div class="form">
@@ -434,7 +433,7 @@
                     </div>
                 </div>
 
-                <div class="removecardP">
+                <div class="removecardP RMNurse">
                     <div class="card text-center removecard">
                         <div class="card-header">
                             <i style="cursor: pointer;" class="fa-solid fa-xmark DontDeleteUser"></i>
@@ -518,9 +517,9 @@
                                             <td>35</td>
                                             <td>Male</td>
                                             <td>
-                                                <i class="fa-solid fa-pen mr-3"
+                                                <i class="fa-solid fa-pen mr-3 edit-patient-button"
                                                     style="color: rgb(93, 206, 27); cursor: pointer;"></i>
-                                                <i class="fa-solid fa-trash"
+                                                <i class="fa-solid fa-trash remove-patient-button"
                                                     style="color: rgb(255, 81, 0); cursor: pointer;"></i>
                                             </td>
                                         </tr>
@@ -531,7 +530,7 @@
                     </div>
 
                 </div>
-                <div class="edit1 edit-page">
+                <div class="edit1 edit-page edit-patient">
                     <div class="edit">
                         <i class="fa-solid fa-circle-xmark xmark2" style="color: rgb(67, 67, 212);"></i>
                         <div class="form">
@@ -557,16 +556,17 @@
                             </form>
                         </div>
                     </div>
-                    <div class="removecardP">
-                        <div class="card text-center removecard">
-                            <div class="card-header">
-                                <i style="cursor: pointer;" class="fa-solid fa-xmark DontDeleteUser"></i>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-danger">Delete User</h5>
-                                <p class="card-text">Are you sure that you want to delete ?</p>
-                                <a class="btn btn-danger DeleteUser" style="cursor: pointer;">Delete</a>
-                            </div>
+                </div>
+
+                <div class="removecardP RMPatient">
+                    <div class="card text-center removecard">
+                        <div class="card-header">
+                            <i style="cursor: pointer;" class="fa-solid fa-xmark DontDeleteUser"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Delete User</h5>
+                            <p class="card-text">Are you sure that you want to delete ?</p>
+                            <a class="btn btn-danger DeleteUser" style="cursor: pointer;">Delete</a>
                         </div>
                     </div>
                 </div>
@@ -643,9 +643,9 @@
                                             <td>35</td>
                                             <td>Male</td>
                                             <td>
-                                                <i class="fa-solid fa-pen mr-3"
+                                                <i class="fa-solid fa-pen mr-3 edit-finance-button"
                                                     style="color: rgb(93, 206, 27); cursor: pointer;"></i>
-                                                <i class="fa-solid fa-trash"
+                                                <i class="fa-solid fa-trash remove-finance-button"
                                                     style="color: rgb(255, 81, 0); cursor: pointer;"></i>
                                             </td>
                                         </tr>
@@ -656,7 +656,7 @@
                     </div>
 
                 </div>
-                <div class="edit1 edit-page">
+                <div class="edit1 edit-page edit-finance">
                     <div class="edit">
                         <i class="fa-solid fa-circle-xmark xmark2" style="color: rgb(67, 67, 212);"></i>
                         <div class="form">
@@ -682,16 +682,16 @@
                             </form>
                         </div>
                     </div>
-                    <div class="removecardP">
-                        <div class="card text-center removecard">
-                            <div class="card-header">
-                                <i style="cursor: pointer;" class="fa-solid fa-xmark DontDeleteUser"></i>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-danger">Delete User</h5>
-                                <p class="card-text">Are you sure that you want to delete ?</p>
-                                <a class="btn btn-danger DeleteUser" style="cursor: pointer;">Delete</a>
-                            </div>
+                </div>
+                <div class="removecardP RMFinance">
+                    <div class="card text-center removecard">
+                        <div class="card-header">
+                            <i style="cursor: pointer;" class="fa-solid fa-xmark DontDeleteUser"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Delete User</h5>
+                            <p class="card-text">Are you sure that you want to delete ?</p>
+                            <a class="btn btn-danger DeleteUser" style="cursor: pointer;">Delete</a>
                         </div>
                     </div>
                 </div>
@@ -768,9 +768,9 @@
                                             <td>35</td>
                                             <td>Male</td>
                                             <td>
-                                                <i class="fa-solid fa-pen mr-3"
+                                                <i class="fa-solid fa-pen mr-3 edit-receptionist-button"
                                                     style="color: rgb(93, 206, 27); cursor: pointer;"></i>
-                                                <i class="fa-solid fa-trash"
+                                                <i class="fa-solid fa-trash remove-receptionist-button"
                                                     style="color: rgb(255, 81, 0); cursor: pointer;"></i>
                                             </td>
                                         </tr>
@@ -781,7 +781,7 @@
                     </div>
 
                 </div>
-                <div class="edit1 edit-page">
+                <div class="edit1 edit-page edit-receptionist">
                     <div class="edit">
                         <i class="fa-solid fa-circle-xmark xmark2" style="color: rgb(67, 67, 212);"></i>
                         <div class="form">
@@ -807,16 +807,16 @@
                             </form>
                         </div>
                     </div>
-                    <div class="removecardP">
-                        <div class="card text-center removecard">
-                            <div class="card-header">
-                                <i style="cursor: pointer;" class="fa-solid fa-xmark DontDeleteUser"></i>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-danger">Delete User</h5>
-                                <p class="card-text">Are you sure that you want to delete ?</p>
-                                <a class="btn btn-danger DeleteUser" style="cursor: pointer;">Delete</a>
-                            </div>
+                </div>
+                <div class="removecardP RMReceptionist">
+                    <div class="card text-center removecard">
+                        <div class="card-header">
+                            <i style="cursor: pointer;" class="fa-solid fa-xmark DontDeleteUser"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Delete User</h5>
+                            <p class="card-text">Are you sure that you want to delete ?</p>
+                            <a class="btn btn-danger DeleteUser" style="cursor: pointer;">Delete</a>
                         </div>
                     </div>
                 </div>
@@ -893,9 +893,9 @@
                                             <td>35</td>
                                             <td>Male</td>
                                             <td>
-                                                <i class="fa-solid fa-pen mr-3"
+                                                <i class="fa-solid fa-pen mr-3 edit-pharmacies-button"
                                                     style="color: rgb(93, 206, 27); cursor: pointer;"></i>
-                                                <i class="fa-solid fa-trash"
+                                                <i class="fa-solid fa-trash remove-pharmacies-button"
                                                     style="color: rgb(255, 81, 0); cursor: pointer;"></i>
                                             </td>
                                         </tr>
@@ -907,7 +907,7 @@
 
                 </div>
 
-                <div class="edit1 edit-page">
+                <div class="edit1 edit-page edit-pharmacies">
                     <div class="edit">
                         <i class="fa-solid fa-circle-xmark xmark2" style="color: rgb(67, 67, 212);"></i>
                         <div class="form">
@@ -933,16 +933,17 @@
                             </form>
                         </div>
                     </div>
-                    <div class="removecardP">
-                        <div class="card text-center removecard">
-                            <div class="card-header">
-                                <i style="cursor: pointer;" class="fa-solid fa-xmark DontDeleteUser"></i>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-danger">Delete User</h5>
-                                <p class="card-text">Are you sure that you want to delete ?</p>
-                                <a class="btn btn-danger DeleteUser" style="cursor: pointer;">Delete</a>
-                            </div>
+                </div>
+
+                <div class="removecardP RMPharmacies">
+                    <div class="card text-center removecard">
+                        <div class="card-header">
+                            <i style="cursor: pointer;" class="fa-solid fa-xmark DontDeleteUser"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Delete User</h5>
+                            <p class="card-text">Are you sure that you want to delete ?</p>
+                            <p class="btn btn-danger DeleteUser" style="cursor: pointer;">Delete</p>
                         </div>
                     </div>
                 </div>
@@ -996,9 +997,9 @@
                                         <td>Ahmed</td>
                                         <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, nisi!</td>
                                         <td>
-                                            <i class="fa-solid fa-pen mr-3"
+                                            <i class="fa-solid fa-pen mr-3 edit-department-button"
                                                 style="color: rgb(93, 206, 27); cursor: pointer;"></i>
-                                            <i class="fa-solid fa-trash"
+                                            <i class="fa-solid fa-trash remove-department-button"
                                                 style="color: rgb(255, 81, 0); cursor: pointer;"></i>
                                         </td>
                                     </tbody>
@@ -1006,7 +1007,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="edit1 edit-page">
+                    <div class="edit1 edit-page edit-department">
                         <div class="edit">
                             <i class="fa-solid fa-circle-xmark xmark2" style="color: rgb(67, 67, 212);"></i>
                             <div class="form">
@@ -1017,6 +1018,19 @@
                                     <button>Create</button>
                                 </form>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="removecardP RMDepartment">
+                    <div class="card text-center removecard">
+                        <div class="card-header">
+                            <i style="cursor: pointer;" class="fa-solid fa-xmark DontDeleteUser"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-danger">Delete User</h5>
+                            <p class="card-text">Are you sure that you want to delete ?</p>
+                            <a class="btn btn-danger DeleteUser" style="cursor: pointer;">Delete</a>
                         </div>
                     </div>
                 </div>
